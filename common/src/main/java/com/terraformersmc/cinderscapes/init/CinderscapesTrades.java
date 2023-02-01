@@ -26,7 +26,7 @@ public class CinderscapesTrades {
         LootTableEvents.MODIFY.register((resourceManager, manager, id, supplier, setter) -> {
             if (BARTERING_LOOT_TABLE_ID.equals(id)) {
                 supplier.modifyPools((pools) -> {
-                    pools   .with(new IntegratedEntry(CinderscapesItems.ROSE_QUARTZ, 20, 0, new LootCondition[]{}, new LootFunction[]{SetCountLootFunction.builder(UniformLootNumberProvider.create(5, 12)).build()}))
+                    pools   .with(new IntegratedEntry(CinderscapesItems.SULFUR, 20, 0, new LootCondition[]{}, new LootFunction[]{SetCountLootFunction.builder(UniformLootNumberProvider.create(5, 12)).build()}))
                             .with(new IntegratedEntry(CinderscapesItems.SMOKY_QUARTZ, 20, 0, new LootCondition[]{}, new LootFunction[]{SetCountLootFunction.builder(UniformLootNumberProvider.create(5, 12)).build()}))
                             .with(new IntegratedEntry(CinderscapesItems.SULFUR_QUARTZ, 20, 0, new LootCondition[]{}, new LootFunction[]{SetCountLootFunction.builder(UniformLootNumberProvider.create(5, 12)).build()}));
                 });
@@ -34,7 +34,7 @@ public class CinderscapesTrades {
         });
 
         TradeOfferHelper.registerVillagerOffers(VillagerProfession.MASON, 4, (factories) -> {
-            factories.add((entity, random) -> new TradeOffer(new ItemStack(CinderscapesItems.ROSE_QUARTZ, 12), new ItemStack(Items.EMERALD), 12, 30, 0.05F));
+            factories.add((entity, random) -> new TradeOffer(new ItemStack(CinderscapesItems.SULFUR, 12), new ItemStack(Items.EMERALD), 12, 30, 0.05F));
             factories.add((entity, random) -> new TradeOffer(new ItemStack(CinderscapesItems.SULFUR_QUARTZ, 12), new ItemStack(Items.EMERALD), 12, 30, 0.05F));
             factories.add((entity, random) -> new TradeOffer(new ItemStack(CinderscapesItems.SMOKY_QUARTZ, 12), new ItemStack(Items.EMERALD), 12, 30, 0.05F));
         });
