@@ -90,16 +90,8 @@ public class CinderscapesRecipeProvider extends FabricRecipeProvider {
 		// quartz recipes
 		offerChiseledBlockRecipe(exporter, CinderscapesBlocks.CHISELED_ROSE_QUARTZ_BLOCK, CinderscapesBlocks.ROSE_QUARTZ_SLAB);
 		offerStonecuttingRecipe(exporter, CinderscapesBlocks.CHISELED_ROSE_QUARTZ_BLOCK, CinderscapesBlocks.ROSE_QUARTZ_BLOCK);
-		offerSmelting(exporter, List.of(CinderscapesBlocks.ROSE_QUARTZ_ORE), CinderscapesItems.ROSE_QUARTZ, 0.2f, 200, "misc");
-		ShapedRecipeJsonBuilder.create(CinderscapesBlocks.ROSE_QUARTZ_BLOCK, 1)
-				.pattern("qq")
-				.pattern("qq")
-				.input('q', CinderscapesItems.ROSE_QUARTZ)
-				.criterion("has_quartz", InventoryChangedCriterion.Conditions.items(CinderscapesItems.ROSE_QUARTZ))
-				.offerTo(exporter);
 		offerPolishedStoneRecipe(exporter, CinderscapesBlocks.ROSE_QUARTZ_BRICKS, CinderscapesBlocks.ROSE_QUARTZ_BLOCK);
 		offerStonecuttingRecipe(exporter, CinderscapesBlocks.ROSE_QUARTZ_BRICKS, CinderscapesBlocks.ROSE_QUARTZ_BLOCK);
-		offerBlasting(exporter, List.of(CinderscapesBlocks.ROSE_QUARTZ_ORE), CinderscapesItems.ROSE_QUARTZ, 0.2f, 100, "misc");
 		ShapedRecipeJsonBuilder.create(CinderscapesBlocks.ROSE_QUARTZ_PILLAR, 2)
 				.pattern("Q")
 				.pattern("Q")

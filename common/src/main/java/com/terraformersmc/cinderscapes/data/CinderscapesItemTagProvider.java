@@ -50,7 +50,6 @@ public class CinderscapesItemTagProvider extends FabricTagProvider.ItemTagProvid
 
 		this.getOrCreateTagBuilder(CinderscapesItemTags.QUARTZ)
 			.add(Items.QUARTZ)
-			.add(CinderscapesItems.ROSE_QUARTZ)
 			.add(CinderscapesItems.SMOKY_QUARTZ)
 			.add(CinderscapesItems.SULFUR_QUARTZ);
 
